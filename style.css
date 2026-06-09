@@ -1346,3 +1346,40 @@ video{
         line-height:1.7 !important;
     }
 }
+
+/* ================= FINAL OVERRIDE FIX ================= */
+
+@media (max-width:768px){
+
+    .birthday-memory,
+    .farewell-memory,
+    .group-memory,
+    .outing-memory,
+    .cooking-memory,
+    .birthday2-memory,
+    .temple-memory,
+    .shiva-memory,
+    .next-collage-memory,
+    .hanuman-memory,
+    .reason-memory{
+        display:flex !important;
+        flex-direction:column !important;
+    }
+
+    .scroll-memory{
+        display:block !important;
+    }
+
+    .reason-image,
+    .reason-text{
+        width:100% !important;
+        max-width:360px !important;
+        height:auto !important;
+    }
+
+    button{
+        position:relative !important;
+        z-index:99999 !important;
+        pointer-events:auto !important;
+    }
+}
