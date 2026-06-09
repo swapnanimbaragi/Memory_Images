@@ -1075,56 +1075,47 @@ video{
     box-shadow: 0 0 15px rgba(255,255,255,0.15);
 
 }
-/* ================= FINAL MOBILE RESPONSIVE FIX ================= */
+/* ================= FINAL MOBILE RESPONSIVE FIX FOR ALL PAGES ================= */
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
 
-  html, body {
-    width: 100%;
-    overflow-x: hidden;
+  html, body{
+    width:100%;
+    overflow-x:hidden;
   }
 
-  body {
-    overflow-y: auto !important;
+  body{
+    overflow-y:auto !important;
   }
 
-  section {
-    width: 100%;
-    min-height: 100vh;
-    height: auto !important;
-    overflow-x: hidden !important;
-    padding: 20px 15px 80px;
-    box-sizing: border-box;
+  section{
+    width:100%;
+    min-height:100vh;
+    height:auto !important;
+    overflow-x:hidden !important;
+    overflow-y:auto !important;
+    padding:20px 15px 80px;
+    box-sizing:border-box;
   }
 
-  .opening-page {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  .opening-page{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
   }
 
   .opening-content,
-  .question-box {
-    width: 100% !important;
-    max-width: 360px !important;
-    padding: 25px 18px !important;
-    box-sizing: border-box;
-  }
-
-  .opening-content h1 {
-    font-size: 34px !important;
-    line-height: 1.3 !important;
-  }
-
-  .opening-content h3 {
-    font-size: 17px !important;
-    letter-spacing: 5px !important;
-  }
-
-  .question-box h2 {
-    font-size: 18px !important;
-    letter-spacing: 3px !important;
-    line-height: 1.5 !important;
+  .question-box,
+  .next-box,
+  .group-next-box,
+  .outing-next-box,
+  .cook-next-box,
+  .birthday2-next-box{
+    width:100% !important;
+    max-width:360px !important;
+    padding:25px 18px !important;
+    box-sizing:border-box;
   }
 
   .birthday-memory,
@@ -1137,14 +1128,13 @@ video{
   .shiva-memory,
   .next-collage-memory,
   .hanuman-memory,
-  .chapter11-memory {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
-    text-align: center !important;
-    gap: 15px !important;
-    height: auto !important;
+  .reason-memory{
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    justify-content:flex-start !important;
+    text-align:center !important;
+    gap:18px !important;
   }
 
   .birthday-memory > img,
@@ -1156,12 +1146,12 @@ video{
   .shiva-collage,
   .rainbow-collage,
   .hanuman-images,
-  .chapter11-image {
-    width: 100% !important;
-    max-width: 360px !important;
-    height: auto !important;
-    padding: 0 !important;
-    margin: 0 auto 15px !important;
+  .reason-memory img{
+    width:100% !important;
+    max-width:360px !important;
+    height:auto !important;
+    padding:0 !important;
+    margin:0 auto 15px !important;
   }
 
   .group-image-section img,
@@ -1170,16 +1160,16 @@ video{
   .shiva-collage img,
   .rainbow-collage img,
   .hanuman-images img,
-  .chapter11-image img,
+  .reason-memory img,
   .memory-video,
-  .rainbow-video {
-    width: 100% !important;
-    max-width: 360px !important;
-    height: auto !important;
-    object-fit: contain !important;
-    border-radius: 16px !important;
-    margin: 0 auto 15px !important;
-    display: block !important;
+  .rainbow-video{
+    width:100% !important;
+    max-width:360px !important;
+    height:auto !important;
+    object-fit:contain !important;
+    border-radius:16px !important;
+    margin:0 auto 15px !important;
+    display:block !important;
   }
 
   .birthday-text,
@@ -1192,103 +1182,92 @@ video{
   .shiva-text,
   .rainbow-text,
   .hanuman-text,
-  .chapter11-text {
-    width: 100% !important;
-    max-width: 360px !important;
-    height: auto !important;
-    min-height: auto !important;
-    padding: 18px !important;
-    text-align: center !important;
-    box-sizing: border-box !important;
-
-    position: static !important;
-    left: auto !important;
-    right: auto !important;
-    top: auto !important;
-    transform: none !important;
-
-    white-space: normal !important;
-    word-break: normal !important;
-    overflow-wrap: break-word !important;
+  .reason-text{
+    width:100% !important;
+    max-width:360px !important;
+    height:auto !important;
+    padding:20px !important;
+    text-align:center !important;
+    box-sizing:border-box;
   }
 
-  .birthday2-memory {
-    height: auto !important;
-  }
-
-  .birthday2-photos {
-    width: 100% !important;
-    height: auto !important;
-    flex-direction: column !important;
+  .birthday2-photos{
+    width:100% !important;
+    height:auto !important;
+    display:flex !important;
+    flex-direction:column !important;
+    gap:15px !important;
   }
 
   .bday-small1,
-  .bday-main {
-    width: 100% !important;
-    height: auto !important;
-    object-fit: contain !important;
+  .bday-main{
+    width:100% !important;
+    height:auto !important;
+    object-fit:contain !important;
   }
 
   .shiva-collage,
-  .rainbow-collage {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 15px !important;
+  .rainbow-collage{
+    display:flex !important;
+    flex-direction:column !important;
+    gap:15px !important;
   }
 
-  h1 {
-    font-size: 30px !important;
-    line-height: 1.3 !important;
+  h1,
+  .opening-content h1{
+    font-size:30px !important;
+    line-height:1.3 !important;
   }
 
-  h2 {
-    font-size: 20px !important;
-    line-height: 1.5 !important;
+  h2{
+    font-size:20px !important;
+    line-height:1.5 !important;
   }
 
-  h4 {
-    font-size: 15px !important;
-    letter-spacing: 4px !important;
+  h3,
+  h4{
+    font-size:15px !important;
+    letter-spacing:4px !important;
   }
 
-  p {
-    font-size: 16px !important;
-    line-height: 1.7 !important;
+  p{
+    font-size:16px !important;
+    line-height:1.7 !important;
   }
 
-  button {
-    display: block;
-    width: 80%;
-    max-width: 260px;
-    margin: 25px auto 35px !important;
-    padding: 14px 20px !important;
-    font-size: 18px !important;
-    position: relative !important;
-    z-index: 9999 !important;
-    cursor: pointer;
+  button{
+    display:block !important;
+    width:85% !important;
+    max-width:260px !important;
+    margin:25px auto 35px !important;
+    padding:14px 20px !important;
+    font-size:17px !important;
+    position:relative !important;
+    z-index:9999 !important;
   }
 
-  .scroll-memory {
-    height: 100vh !important;
-    overflow-y: auto !important;
-    padding: 20px 12px !important;
+  .scroll-memory{
+    height:100vh !important;
+    overflow-y:auto !important;
+    padding:20px 12px !important;
   }
 
-  .gallery-title {
-    font-size: 32px !important;
+  .gallery-title{
+    font-size:32px !important;
   }
 
-  .memory-gallery {
-    columns: 1 !important;
-    padding: 10px !important;
+  .memory-gallery{
+    columns:1 !important;
+    padding:10px !important;
   }
 
   .memory-gallery img,
-  .memory-gallery video {
-    width: 100% !important;
-    height: auto !important;
-    min-height: auto !important;
-    margin-bottom: 18px !important;
+  .memory-gallery video{
+    width:100% !important;
+    height:auto !important;
+    min-height:auto !important;
+    margin-bottom:18px !important;
+    border-radius:18px !important;
   }
 }
 
