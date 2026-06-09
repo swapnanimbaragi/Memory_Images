@@ -86,7 +86,7 @@ function showNextCollage() {
 
 /* CHAPTER 10 */
 function showRainbowCafe() {
-    showPage(".rainbow-memory", "flex");
+    showPage(".next-collage-memory", "flex");
 }
 
 /* CHAPTER 11 */
@@ -101,5 +101,5 @@ function showScrollMemory() {
 
 /* REASON BEHIND THE BOND */
 function showReasonMemory(){
-    showPage(".reason-memory");
+    showPage(".reason-memory", "flex");
 }
