@@ -1332,3 +1332,54 @@ video{
     width:80%;
     margin:40px auto 70px;
 }
+
+/* MOBILE RESPONSIVE FIX */
+@media screen and (max-width: 768px) {
+
+    .group-memory {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 95% !important;
+        height: auto !important;
+        padding: 15px !important;
+        gap: 20px !important;
+    }
+
+    .group-image-section,
+    .group-text-section {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .group-image-section {
+        display: flex;
+        justify-content: center;
+    }
+
+    .group-image-section img {
+        width: 90% !important;
+        height: auto !important;
+        border-radius: 15px;
+        object-fit: cover;
+    }
+
+    .group-text-section {
+        position: static !important;
+        padding: 20px !important;
+        font-size: 18px !important;
+        line-height: 1.8 !important;
+        text-align: center !important;
+        word-break: normal !important;
+        overflow-wrap: break-word !important;
+        white-space: normal !important;
+    }
+
+    .group-text-section h2 {
+        font-size: 26px !important;
+        text-align: center;
+    }
+
+    .group-text-section p {
+        text-align: center;
+    }
+}
