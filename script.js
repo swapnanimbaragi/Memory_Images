@@ -98,3 +98,8 @@ function showHanumanMemory() {
 function showScrollMemory() {
     showPage(".scroll-memory", "block");
 }
+
+/* REASON BEHIND THE BOND */
+function showReasonMemory(){
+    showPage(".reason-memory");
+}
