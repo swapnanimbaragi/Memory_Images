@@ -1,0 +1,1077 @@
+/* ================= RESET ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Segoe UI", sans-serif;
+    background:black;
+    overflow:hidden;
+}
+
+section{
+    width:100%;
+    height:100vh;
+    position:relative;
+    overflow:hidden;
+}
+
+
+/* ================= OPENING PAGE ================= */
+
+.opening-page{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:
+    radial-gradient(circle at top left,#7209b7,transparent 30%),
+    radial-gradient(circle at bottom right,#00b4d8,transparent 30%),
+    linear-gradient(135deg, #22092c,#3b185f,#522258,#5b2c6f);
+}
+
+.opening-content{
+    width:70%;
+    padding:60px;
+    text-align:center;
+    background:rgba(255,255,255,0.07);
+    backdrop-filter:blur(18px);
+    border-radius:40px;
+    border:1px solid rgba(255,255,255,0.15);
+    color:white;
+}
+
+.opening-content h3{
+    color:#64ffda;
+    letter-spacing:6px;
+    margin-bottom:20px;
+}
+
+.opening-content h1{
+    color:#ffd166;
+    font-size:62px;
+    margin-bottom:25px;
+}
+
+.opening-content p{
+    font-size:24px;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.question-box h2{
+    color:#72efdd;
+    font-size:36px;
+    margin-bottom:25px;
+}
+
+
+/* ================= BUTTON STYLE ================= */
+
+button{
+    padding:18px 45px;
+    border:none;
+    border-radius:50px;
+    font-size:20px;
+    cursor:pointer;
+    color:white;
+    background:linear-gradient(135deg,#ff4d6d,#ff758f,#ffd166);
+    box-shadow:0 0 25px rgba(255,77,109,0.4);
+    transition:0.4s;
+    margin-top:15px;
+}
+
+button:hover{
+    transform:scale(1.08) translateY(-4px);
+    box-shadow:0 0 35px rgba(255,77,109,0.7);
+}
+
+
+/* ================= COMMON TEXT STYLE ================= */
+
+.birthday-text,
+.farewell-text,
+.group-text-section,
+.outing-text-section,
+.cooking-text,
+.birthday2-text{
+    color:white;
+    z-index:10;
+}
+
+.birthday-text h4,
+.farewell-text h4,
+.group-text-section h4,
+.outing-text-section h4,
+.cooking-text h4,
+.birthday2-text h4{
+    color:#72efdd;
+    letter-spacing:5px;
+    margin-bottom:15px;
+}
+
+.birthday-text h1,
+.farewell-text h1,
+.group-text-section h1,
+.outing-text-section h1,
+.cooking-text h1,
+.birthday2-text h1{
+    color:#ffd166;
+    font-size:46px;
+    line-height:1.25;
+    margin-bottom:20px;
+}
+
+.birthday-text p,
+.farewell-text p,
+.group-text-section p,
+.outing-text-section p,
+.cooking-text p,
+.birthday2-text p{
+    color:white;
+    font-size:18px;
+    line-height:1.7;
+    margin-bottom:13px;
+}
+
+.birthday-text h2,
+.farewell-text h2,
+.group-text-section h2,
+.outing-text-section h2,
+.cooking-text h2,
+.birthday2-text h2{
+    color:#90f1ef;
+    font-size:27px;
+    line-height:1.5;
+    margin-top:12px;
+}
+
+
+/* ================= CHAPTER 1 ================= */
+
+.birthday-memory{
+    display:flex;
+    background:linear-gradient(135deg,#050816,#111827,#1e1b4b);
+}
+
+.birthday-memory > img{
+    width:58%;
+    height:100vh;
+    object-fit:contain;
+    padding:20px;
+}
+
+.shade{
+    display:none;
+}
+
+.birthday-text{
+    width:42%;
+    height:100vh;
+    padding:45px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background:rgba(7,10,25,0.78);
+    backdrop-filter:blur(14px);
+}
+
+
+/* ================= NEXT PAGES ================= */
+
+.next-chapter-page,
+.group-next-page,
+.outing-next-page,
+.cook-next-page,
+.birthday2-next-page{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#03045e,#240046,#0f172a);
+}
+
+.next-box,
+.group-next-box,
+.outing-next-box,
+.cook-next-box,
+.birthday2-next-box{
+    width:65%;
+    padding:60px;
+    text-align:center;
+    color:white;
+    background:rgba(255,255,255,0.07);
+    backdrop-filter:blur(18px);
+    border-radius:40px;
+}
+
+.next-box h3,
+.group-next-box h3,
+.outing-next-box h3,
+.cook-next-box h3,
+.birthday2-next-box h3{
+    color:#72efdd;
+    letter-spacing:5px;
+    margin-bottom:18px;
+}
+
+.next-box h1,
+.group-next-box h1,
+.outing-next-box h1,
+.cook-next-box h1,
+.birthday2-next-box h1{
+    color:#ffd166;
+    font-size:55px;
+    margin-bottom:25px;
+}
+
+.next-box p{
+    color:white;
+    font-size:23px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+
+/* ================= CHAPTER 2 ================= */
+
+.farewell-memory{
+    display:flex;
+    background:linear-gradient(135deg,#001219,#0a1128,#1b1b3a);
+}
+
+.farewell-memory img{
+    width:58%;
+    height:100vh;
+    object-fit:contain;
+    padding:20px;
+}
+
+.farewell-text{
+    width:42%;
+    height:100vh;
+    padding:45px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background:rgba(2,8,23,0.8);
+    backdrop-filter:blur(14px);
+}
+
+
+/* ================= CHAPTER 3 ================= */
+
+.group-memory{
+    display:flex;
+    background:linear-gradient(135deg,#1a0f2e,#2b124c,#522258);
+}
+
+.group-image-section{
+    width:55%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:25px;
+}
+
+.group-image-section img{
+    width:100%;
+    height:95%;
+    object-fit:contain;
+    border-radius:30px;
+}
+
+.group-text-section{
+    width:45%;
+    height:100vh;
+    padding:45px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background:rgba(0,0,0,0.35);
+    backdrop-filter:blur(14px);
+}
+
+
+/* ================= CHAPTER 4 ================= */
+
+.outing-memory{
+    display:flex;
+    background:linear-gradient(135deg,#22092c,#3b185f,#5b2c6f);
+}
+
+.outing-text-section{
+    width:48%;
+    height:100vh;
+    padding:45px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background:rgba(0,0,0,0.32);
+    backdrop-filter:blur(14px);
+}
+
+.outing-image-section{
+    width:52%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:25px;
+}
+
+.outing-image-section img{
+    width:100%;
+    height:95%;
+    object-fit:contain;
+    border-radius:30px;
+}
+
+
+/* ================= CHAPTER 5 VIDEO ================= */
+
+.cooking-memory{
+    display:flex;
+    background:linear-gradient(135deg,#2b124c,#522258,#854f6c);
+}
+
+.memory-video{
+    width:55%;
+    height:100vh;
+    object-fit:contain;
+    background:black;
+    padding:20px;
+}
+
+.video-overlay{
+    display:none;
+}
+
+.cooking-text{
+    width:45%;
+    height:100vh;
+    padding:45px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background:rgba(5,10,25,0.82);
+    backdrop-filter:blur(14px);
+    overflow-y:auto;
+}
+
+
+/* ================= CHAPTER 6 FINAL CORRECT ================= */
+
+.birthday2-memory{
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    background:linear-gradient(135deg,#2b124c,#522258,#854f6c);
+    overflow:hidden;
+}
+
+.birthday2-photos{
+    width:100%;
+    height:58vh;
+    display:flex;
+}
+
+.bday-small1,
+.bday-main{
+    width:50%;
+    height:58vh;
+    object-fit:cover;
+}
+
+.birthday2-text{
+    width:100%;
+    height:42vh;
+    padding:28px 60px;
+    background:rgba(0,0,0,0.55);
+    backdrop-filter:blur(14px);
+    color:white;
+}
+
+.birthday2-text h4{
+    color:#72efdd;
+    letter-spacing:5px;
+    margin-bottom:10px;
+}
+
+.birthday2-text h1{
+    color:#ffd166;
+    font-size:42px;
+    margin-bottom:12px;
+}
+
+.birthday2-text p{
+    color:white;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:8px;
+}
+
+.birthday2-text h2{
+    color:#90f1ef;
+    font-size:26px;
+    line-height:1.4;
+}
+
+
+/* ================= CINEMATIC ANIMATIONS ================= */
+
+.animate-page{
+    animation:pageIn 1.2s ease;
+}
+
+.animate-page img,
+.animate-page video{
+    animation:softMove 8s ease-in-out infinite alternate;
+}
+
+@keyframes pageIn{
+    from{
+        opacity:0;
+        filter:blur(14px);
+        transform:scale(1.04);
+    }
+    to{
+        opacity:1;
+        filter:blur(0);
+        transform:scale(1);
+    }
+}
+
+@keyframes softMove{
+    from{
+        transform:scale(1);
+    }
+    to{
+        transform:scale(1.03);
+    }
+}
+
+
+/* ================= FLOATING PARTICLES EFFECT ================= */
+
+section::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background-image:
+    radial-gradient(circle,#ffffff55 1px,transparent 1px);
+    background-size:90px 90px;
+    animation:particles 12s linear infinite;
+    pointer-events:none;
+    z-index:1;
+}
+
+@keyframes particles{
+    from{
+        background-position:0 0;
+    }
+    to{
+        background-position:120px 220px;
+    }
+}
+
+
+/* ================= GLITTER EFFECT ON PAGE CHANGE ================= */
+
+.animate-page::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    z-index:20;
+    background-image:
+    radial-gradient(circle,#ffffff 1px,transparent 2px),
+    radial-gradient(circle,#ffd166 1px,transparent 2px),
+    radial-gradient(circle,#ff8fab 1px,transparent 2px),
+    radial-gradient(circle,#72efdd 1px,transparent 2px);
+    background-size:
+    80px 80px,
+    120px 120px,
+    160px 160px,
+    200px 200px;
+    animation:glitterFall 1.8s ease-out forwards;
+}
+
+@keyframes glitterFall{
+    0%{
+        opacity:0;
+        transform:translateY(-40px) scale(1);
+    }
+    30%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+        transform:translateY(120px) scale(1.2);
+    }
+}
+
+
+/* ================= PAGE SHINE EFFECT ================= */
+
+.animate-page .opening-content,
+.animate-page .birthday-text,
+.animate-page .farewell-text,
+.animate-page .group-text-section,
+.animate-page .outing-text-section,
+.animate-page .cooking-text,
+.animate-page .birthday2-text,
+.animate-page .next-box,
+.animate-page .group-next-box,
+.animate-page .outing-next-box,
+.animate-page .cook-next-box,
+.animate-page .birthday2-next-box{
+    animation:textSlide 1.2s ease;
+}
+
+@keyframes textSlide{
+    from{
+        opacity:0;
+        transform:translateY(35px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+
+/* ================= KEEP TEXT ABOVE PARTICLES ================= */
+
+.opening-content,
+.birthday-text,
+.farewell-text,
+.group-text-section,
+.outing-text-section,
+.cooking-text,
+.birthday2-text,
+.next-box,
+.group-next-box,
+.outing-next-box,
+.cook-next-box,
+.birthday2-next-box{
+    position:relative;
+    z-index:5;
+}
+
+img,
+video{
+    position:relative;
+    z-index:2;
+}
+
+/* ================= CHAPTER 7 TEMPLE RIDE ================= */
+
+.temple-memory{
+    display:flex;
+    background:linear-gradient(135deg,#2b124c,#522258,#854f6c);
+}
+
+.temple-memory img{
+    width:58%;
+    height:100vh;
+    object-fit:cover;
+}
+
+.temple-text{
+    width:42%;
+    height:100vh;
+
+    padding:45px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    background:rgba(0,0,0,0.45);
+
+    backdrop-filter:blur(14px);
+
+    color:white;
+}
+
+/* TEXT STYLE */
+
+.temple-text h4{
+    color:#72efdd;
+    letter-spacing:5px;
+    margin-bottom:15px;
+}
+
+.temple-text h1{
+    color:#ffd166;
+    font-size:46px;
+    line-height:1.3;
+    margin-bottom:22px;
+}
+
+.temple-text p{
+    color:white;
+    font-size:19px;
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+.temple-text h2{
+    color:#90f1ef;
+    font-size:28px;
+    line-height:1.5;
+    margin-top:10px;
+}
+
+/* ================= CHAPTER 8 : SHIVA COLLAGE CLEAN ================= */
+
+.shiva-memory{
+    display:flex;
+    background:linear-gradient(135deg,#2b124c,#522258,#854f6c);
+}
+
+/* LEFT COLLAGE */
+
+.shiva-collage{
+    width:58%;
+    height:100vh;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr;
+
+    gap:12px;
+
+    padding:18px;
+}
+
+/* ALL PHOTOS FULL VISIBLE */
+
+.shiva-collage img{
+    width:100%;
+    height:100%;
+
+    object-fit:contain;
+
+    background:#100018;
+
+    border-radius:22px;
+
+    padding:5px;
+}
+
+/* HIDE 5TH PHOTO FOR NOW */
+
+.shiva-collage img:nth-child(5){
+    display:none;
+}
+
+/* RIGHT TEXT */
+
+.shiva-text{
+    width:42%;
+    height:100vh;
+
+    padding:50px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    background:rgba(0,0,0,0.38);
+
+    backdrop-filter:blur(14px);
+
+    color:white;
+}
+
+.shiva-text h4{
+    color:#72efdd;
+
+    letter-spacing:5px;
+
+    margin-bottom:18px;
+}
+
+.shiva-text h1{
+    color:#ffd166;
+
+    font-size:46px;
+
+    line-height:1.3;
+
+    margin-bottom:25px;
+}
+
+.shiva-text p{
+    color:white;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:15px;
+}
+
+.shiva-text h2{
+    color:#90f1ef;
+
+    font-size:28px;
+
+    line-height:1.5;
+
+    margin-top:15px;
+}
+
+/* ================= RAINBOW CAFE FIXED ================= */
+
+.rainbow-collage{
+
+    width:58%;
+    height:100vh;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    grid-template-rows:1fr 1fr 1fr;
+
+    gap:12px;
+
+    padding:18px;
+}
+
+/* ALL PHOTOS */
+
+.rainbow-collage img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    border:4px solid rgba(255,255,255,0.10);
+}
+
+/* ROTATE 3RD PHOTO CORRECTLY */
+
+.rainbow-collage img:nth-child(3){
+
+    transform:rotate(90deg);
+
+    object-fit:contain;
+
+    background:#100018;
+}
+
+/* LAST PHOTO CENTER */
+
+.rainbow-collage img:nth-child(5){
+
+    grid-column:1/3;
+
+    width:60%;
+
+    margin:auto;
+}
+/* ================= RAINBOW CAFE FINAL PERFECT ================= */
+
+.next-collage-memory{
+    display:flex;
+    background:linear-gradient(135deg,#2b124c,#522258,#854f6c);
+}
+
+/* LEFT PHOTO AREA */
+
+.rainbow-collage{
+
+    width:58%;
+    height:100vh;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    grid-template-rows:32% 32% 32%;
+
+    gap:12px;
+
+    padding:18px;
+}
+
+/* ALL PHOTOS */
+
+.rainbow-collage img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:22px;
+
+    border:4px solid rgba(255,255,255,0.10);
+}
+
+/* 3RD PHOTO LITTLE ZOOM ONLY */
+
+.rainbow-collage img:nth-child(3){
+
+    grid-row:2 / 3;
+
+    object-fit:cover;
+
+    transform:scale(1.02);
+}
+
+/* 5TH PHOTO USE EMPTY SPACE */
+
+.rainbow-collage img:nth-child(5){
+
+    grid-column:2 / 3;
+
+    grid-row:3 / 4;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transform:scale(1);
+}
+/* RIGHT TEXT */
+
+.rainbow-text{
+
+    width:42%;
+    height:100vh;
+
+    padding:55px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    background:rgba(0,0,0,0.38);
+
+    backdrop-filter:blur(14px);
+
+    color:white;
+}
+
+.rainbow-text h4{
+
+    color:#72efdd;
+
+    letter-spacing:5px;
+
+    margin-bottom:18px;
+}
+
+.rainbow-text h1{
+
+    color:#ffd166;
+
+    font-size:44px;
+
+    line-height:1.3;
+
+    margin-bottom:22px;
+}
+
+.rainbow-text p{
+
+    color:white;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:15px;
+}
+
+/* VIDEO IN EMPTY SPACE */
+
+.rainbow-video{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:22px;
+
+    border:4px solid rgba(255,255,255,0.10);
+
+    grid-column:1 / 2;
+
+    grid-row:3 / 4;
+}
+
+/* ================= CHAPTER 10 HANUMAN ================= */
+
+.hanuman-memory{
+
+    display:flex;
+
+    background:linear-gradient(135deg,#2b124c,#522258,#854f6c);
+}
+
+/* LEFT PHOTOS */
+
+.hanuman-images{
+    width:58%;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+    padding:20px;
+}
+
+.hanuman-images img{
+    width:100%;
+    height:50%;
+    object-fit:cover;
+    object-position:center;
+    border-radius:24px;
+    border:4px solid rgba(255,255,255,0.10);
+}
+
+/* second photo adjust */
+.hanuman-images img:nth-child(2){
+    object-position:center 35%;
+}
+
+/* RIGHT TEXT */
+
+.hanuman-text{
+
+    width:42%;
+    height:100vh;
+
+    padding:55px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    background:rgba(0,0,0,0.35);
+
+    backdrop-filter:blur(14px);
+
+    color:white;
+}
+
+.hanuman-text h4{
+
+    color:#72efdd;
+
+    letter-spacing:5px;
+
+    margin-bottom:18px;
+}
+
+.hanuman-text h1{
+
+    color:#ffd166;
+
+    font-size:48px;
+
+    line-height:1.3;
+
+    margin-bottom:25px;
+}
+
+.hanuman-text p{
+
+    color:white;
+
+    font-size:19px;
+
+    line-height:1.9;
+
+    margin-bottom:18px;
+}
+
+.hanuman-text button{
+
+    margin-top:20px;
+}
+
+/* ================= FINAL MEMORY SCROLL LIKE WEBSITE ================= */
+
+
+/* FORCE FINAL SCROLL GALLERY FIX */
+
+.scroll-memory{
+    width:100%;
+    height:100vh;
+    overflow-y:auto;
+    background:linear-gradient(135deg,#2b124c,#522258,#854f6c);
+    padding:30px;
+}
+
+.gallery-title{
+    color:#ffd166;
+    text-align:center;
+    font-size:55px;
+    margin-bottom:30px;
+}
+
+.memory-gallery{
+
+    columns: 3;
+    column-gap: 20px;
+    padding: 20px;
+
+}
+
+.memory-gallery img{
+
+    width: 100%;
+    margin-bottom: 20px;
+
+    border-radius: 25px;
+
+    display: block;
+
+    break-inside: avoid;
+
+    box-shadow: 0 0 15px rgba(255,255,255,0.15);
+
+}
+.memory-gallery video{
+
+    width: 100%;
+
+    height: auto;
+
+    min-height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+
+    margin-bottom: 20px;
+
+    display: block;
+
+    break-inside: avoid;
+
+    background: #000;
+
+    box-shadow: 0 0 15px rgba(255,255,255,0.15);
+
+}

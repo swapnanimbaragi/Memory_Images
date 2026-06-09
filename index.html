@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Farewell Memories</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- OPENING PAGE -->
+<section class="opening-page">
+    <div class="opening-content">
+        <h3>WELCOME TO OUR MEMORIES ✨</h3>
+
+        <h1>Everyone wanted to see something special... ❤️</h1>
+
+        <p>
+            A few moments… A few smiles… A few people…
+            turned our engineering life into the most unforgettable journey.
+        </p>
+
+        <div class="question-box">
+            <h2>Excited to see our beautiful chapters? 📖✨</h2>
+
+            <button onclick="startMemories()">
+                Yes Of Course ❤️
+            </button>
+        </div>
+    </div>
+</section>
+
+
+<!-- CHAPTER 1 -->
+<section class="birthday-memory" style="display:none;">
+
+    <img src="c:\Users\Swapna\Desktop\Photos\Birthday.jpeg" alt="Birthday Memory">
+
+    <div class="shade"></div>
+
+    <div class="birthday-text">
+        <h4>CHAPTER 01</h4>
+
+        <h1>Our Story Began Here ❤️</h1>
+
+        <p>
+            It all started with a simple birthday plan…
+            But none of us knew that day would become the beginning
+            of our beautiful journey together.
+        </p>
+
+        <p>
+            For the first time, we all came together,
+            laughed together, celebrated together,
+            and captured our very first group photo. 📸✨
+        </p>
+
+        <p>
+            That birthday was not just a celebration of one person —
+            it became the start of countless memories,
+            endless fun, crazy moments,
+            and an unforgettable friendship.
+        </p>
+
+        <h2>
+            From strangers…<br>
+            to classmates…<br>
+            to becoming a family. ❤️
+        </h2>
+
+        <button onclick="showChapterTwo()">
+            See Next Chapter ❤️
+        </button>
+    </div>
+</section>
+
+
+<!-- CHAPTER 2 -->
+<section class="farewell-memory" style="display:none;">
+
+    <img src="c:\Users\Swapna\Desktop\Photos\greendress.jpeg" alt="Farewell Memory">
+
+    <div class="farewell-text">
+        <h4>CHAPTER 02</h4>
+
+        <h1>Another Memory Added ✨</h1>
+
+        <p>
+            Time passed quietly, and before we even realized how close we had become,
+            another beautiful moment arrived — our seniors’ farewell. 🎓💫
+        </p>
+
+        <p>
+            Amid the smiles, laughter, and emotional goodbyes,
+            we gathered once again for another group photo. 📸
+        </p>
+
+        <p>
+            Maybe we still hadn’t completely understood each other back then…
+            but somewhere between those little conversations and shared moments,
+            our bond had already started growing stronger.
+        </p>
+
+        <h2>
+            That photo wasn’t just taken at a farewell —<br>
+            it captured the beginning of friendships that would stay
+            in our hearts forever. ❤️
+        </h2>
+
+        <button onclick="showGroupChapter()">
+            Continue Journey 💫
+        </button>
+    </div>
+</section>
+
+
+<!-- CHAPTER 3 -->
+<section class="group-memory" style="display:none;">
+
+    <div class="group-image-section">
+        <img src="c:\Users\Swapna\Desktop\Photos\yoga.jpeg" alt="Group Memory">
+    </div>
+
+    <div class="group-text-section">
+        <h4>CHAPTER 03</h4>
+
+        <h1>From 4 Hearts to 9 Souls ❤️✨</h1>
+
+        <p>
+            What started as just a small group of 4 slowly turned
+            into a beautiful circle of 9 amazing people.
+        </p>
+
+        <p>
+            Without planning it, without forcing it,
+            we kept finding comfort, happiness,
+            and belonging in each other’s company. 🌸
+        </p>
+
+        <p>
+            New faces joined, new memories were created,
+            and our little group became louder,
+            crazier, stronger, and full of life. 📸💫
+        </p>
+
+        <h2>
+            Some friendships happen slowly…<br>
+            but once they grow,<br>
+            they become the most unforgettable part of life. ❤️
+        </h2>
+
+        <button onclick="showOutingChapter()">
+            Next Memory 🌸
+        </button>
+    </div>
+</section>
+
+
+<!-- CHAPTER 4 -->
+<section class="outing-memory" style="display:none;">
+
+    <div class="outing-text-section">
+        <h4>CHAPTER 04</h4>
+
+        <h1>The Beginning of Our Little Adventures 🌸✨</h1>
+
+        <p>
+            It started with just a small trip to school for an activity point…
+            Nothing big, nothing special — or at least that’s what we thought then. ❤️
+        </p>
+
+        <p>
+            But somewhere between roaming here and there,
+            laughing for no reason, taking random photos,
+            and spending those little moments together…
+            those small trips slowly became a part of our story.
+        </p>
+
+        <p>
+            Without planning, without even discussing it much,
+            our “small outings” quietly turned into something mandatory. 🌍💫
+        </p>
+
+        <p>
+            A day without roaming together started feeling incomplete.
+            Those simple walks, unexpected detours,
+            roadside talks, and endless laughter became
+            the moments we looked forward to every single time. 📸
+        </p>
+
+        <h2>
+            That first small trip didn’t just start an outing…<br>
+            it started a habit of making memories together. ❤️
+        </h2>
+
+        <button onclick="showCookingMemory()">
+            Play Cooking Memory 🎬
+        </button>
+    </div>
+
+    <div class="outing-image-section">
+        <img src="c:\Users\Swapna\Desktop\Photos\school.jpeg" alt="School Memory">
+    </div>
+</section>
+
+
+<!-- CHAPTER 5 VIDEO -->
+<section class="cooking-memory" style="display:none;">
+
+    <video controls class="memory-video">
+        <source src="c:\Users\Swapna\Desktop\Photos\cooking.mp4" type="video/mp4">
+    </video>
+
+    <div class="video-overlay"></div>
+
+    <div class="cooking-text">
+        <h4>CHAPTER 05</h4>
+
+        <h1>Where Our Real Memories Began 🍳✨</h1>
+
+        <p>
+            Our memories truly started with something simple —
+            cooking together and playing together. ❤️
+        </p>
+
+        <p>
+            What began as random fun slowly turned into
+            some of the happiest moments of our lives.
+            Cooking as a group, making a mess,
+            laughing at silly mistakes,
+            sharing food, teasing each other,
+            and playing like kids without caring about anything else… 🌸
+        </p>
+
+        <p>
+            Those moments were never about perfect plans
+            or expensive places.
+            They were about the happiness
+            we found in each other’s company. 💫
+        </p>
+
+        <h2>
+            Somewhere between the laughter in the kitchen
+            and the chaos of our games,
+            we unknowingly created memories
+            that would stay in our hearts forever. 📸❤️
+        </h2>
+
+        <button onclick="showBirthdayTwo()">
+            See Another Birthday 🎂
+        </button>
+    </div>
+</section>
+
+
+<!-- CHAPTER 6 -->
+<section class="birthday2-memory" style="display:none;">
+
+    <div class="birthday2-photos">
+        <img src="c:\Users\Swapna\Desktop\Photos\hsk.jpeg" class="bday-small1" alt="Birthday Photo One">
+
+        <img src="c:\Users\Swapna\Desktop\Photos\tejabdy.jpeg" class="bday-main" alt="Birthday Photo Two">
+    </div>
+
+    <div class="birthday2-text">
+        <h4>CHAPTER 06</h4>
+
+        <h1>Another Birthday, Another Beautiful Memory 🎂❤️</h1>
+
+        <p>
+            Once again, we came together for another birthday…
+            but this time, it felt less like a gathering and more like home. 🌸
+        </p>
+
+        <p>
+            The laughter became louder, the bond became stronger,
+            and the memories became even more special. 📸✨
+        </p>
+
+        <h2>
+            What started as just birthdays slowly turned into reasons
+            for all of us to stay together. ❤️
+        </h2>
+
+        <button onclick="showTempleRide()">
+            Next Memory 🛵
+        </button>
+    </div>
+</section>
+
+
+<!-- CHAPTER 7: TEMPLE RIDE PHOTO -->
+
+<section class="temple-memory" style="display:none;">
+
+    <img src="c:\Users\Swapna\Desktop\Photos\bike.jpeg" alt="Temple Ride Memory">
+
+    <div class="temple-text">
+
+        <h4>CHAPTER 07</h4>
+
+        <h1>Ride, Prayers & Memories 🛵✨</h1>
+
+        <p>
+            That bike ride to Tulasigeri Anjaneya Temple was more than just a trip…
+            it was one of those peaceful moments where happiness felt simple and real. ❤️
+        </p>
+
+        <p>
+            The ride together, the fun on the way, the prayers,
+            and the memories we created there made the day unforgettable. 🌸📸
+        </p>
+
+        <h2>
+            Sometimes, the best memories are made on roads taken together. ✨
+        </h2>
+        <button onclick="showShivaTrip()">
+            Next Blessing 🔱
+        </button>
+    </div>
+
+</section>
+
+<!-- CHAPTER 08 : RAMDURG SHIVA TRIP -->
+
+<section class="shiva-memory" style="display:none;">
+
+    <!-- 5 PHOTO COLLAGE -->
+
+        <div class="shiva-collage">
+
+        <img src="c:\Users\Swapna\Desktop\Photos\ramdurg.jpeg">
+
+        <img src="c:\Users\Swapna\Desktop\Photos\ramdurg4.jpeg">
+
+        <img src="c:\Users\Swapna\Desktop\Photos\ramdurg2.jpeg">
+
+        <img src="c:\Users\Swapna\Desktop\Photos\ramdurg5.jpeg">
+
+        <img src="c:\Users\Swapna\Desktop\Photos\ramdurg3.jpeg"
+        class="big-photo">
+
+    </div>
+
+
+    <!-- TEXT -->
+
+    <div class="shiva-text">
+
+        <h4>CHAPTER 08</h4>
+
+        <h1>
+            An Unplanned Journey,
+            A Peaceful Blessing 🌙✨
+        </h1>
+
+        <p>
+            What started as a sudden unplanned road trip to Ramdurg
+            turned into one of our most memorable moments together. 🛵❤️
+        </p>
+
+        <p>
+            With no perfect plans,
+            just excitement and togetherness,
+            we travelled through roads filled with laughter,
+            music, and endless memories. 🌸
+        </p>
+
+        <p>
+            And somewhere along that beautiful journey,
+            we stood together to seek blessings from Lord Shiva. 🔱✨
+        </p>
+
+        <h2>
+            Sometimes, the most unexpected trips
+            give the most beautiful memories
+            and peace to the heart. ❤️
+        </h2>
+        <button onclick="showNextCollage()">
+            More Memories Ahead 📸✨
+        </button>
+    </div>
+
+</section>
+
+<!-- CHAPTER 09 : RAINBOW CAFE -->
+
+<section class="next-collage-memory" style="display:none;">
+
+    <div class="rainbow-collage">
+
+        <img src="c:\Users\Swapna\Desktop\Photos\rainbow.jpeg">
+
+        <img src="c:\Users\Swapna\Desktop\Photos\rainbow2.jpeg">
+        <!-- VIDEO -->
+
+        <video class="rainbow-video" controls autoplay muted loop>
+
+            <source src="c:\Users\Swapna\Desktop\Photos\rainbowvideo.mp4">
+
+        </video>
+        <img src="c:\Users\Swapna\Desktop\Photos\rainbow5.jpeg">
+        <!-- PUT VERTICAL PHOTO HERE -->
+        <img src="c:\Users\Swapna\Desktop\Photos\rainbow4.jpeg">
+
+        <img src="c:\Users\Swapna\Desktop\Photos\rainbow3.jpeg">
+
+        
+            
+
+    </div>
+
+    <div class="rainbow-text">
+
+        <h4>CHAPTER 09</h4>
+
+        <h1>Rainbow Cafe Memories ☕🌈</h1>
+
+        <p>
+            Rainbow Cafe became more than just a café for us…
+            it became our little place filled with laughter,
+            talks, selfies, and countless memories. ❤️
+        </p>
+
+        <p>
+            One funny memory we’ll never forget is how Rohan saw
+            a Chinese girl there, and from that day,
+            teasing him about it became part of our fun. 😂📸
+        </p>
+
+        <p>
+            And the best part?
+            We even took a selfie with her — turning a small moment
+            into one of our favorite memories forever. ✨
+        </p>
+        <button onclick="showHanumanMemory()">
+
+            Back To Hanuman ❤️
+
+        </button>
+    </div>
+
+</section>
+
+<!-- ================= CHAPTER 10 ================= -->
+
+<section class="hanuman-memory" style="display:none;">
+
+    <!-- LEFT 2 PHOTOS -->
+
+    <div class="hanuman-images">
+
+        <img src="c:\Users\Swapna\Desktop\Photos\anjandri.jpeg">
+
+        <img src="c:\Users\Swapna\Desktop\Photos\anjandri2.jpeg">
+
+    </div>
+
+
+    <!-- RIGHT TEXT -->
+
+    <div class="hanuman-text">
+
+        <h4>CHAPTER 10</h4>
+
+        <h1>Back Again to Hanuman ❤️🙏</h1>
+
+        <p>
+            Once again, we felt like going for blessings…
+            and somehow, our hearts took us back to
+            Anjanadri Temple. 🌸✨
+        </p>
+
+        <p>
+            We often kept going to meet Hanuman,
+            without any special reason.
+            Maybe it was the peace, the happiness,
+            or simply the feeling of being together there. 🛵💫
+        </p>
+
+        <p>
+            Some places are not just destinations…
+            they slowly become a part of our hearts
+            and memories forever. ❤️
+        </p>
+
+        <!-- NEXT BUTTON -->
+
+        <button onclick="showScrollMemory()">
+            See next Memories ❤️
+        </button>
+
+    </div>
+
+</section>
+
+<!-- FINAL SCROLL MEMORIES -->
+
+<section class="scroll-memory" style="display:none;">
+
+    <div class="memory-gallery">
+         <video class="memory-video-box" autoplay muted loop playsinline>
+            <source src="c:\Users\Swapna\Desktop\Photos\momo2.mp4" type="video/mp4">
+        </video>
+        <img src="c:\Users\Swapna\Desktop\Photos\muchkandi.jpeg">
+        <img src="c:\Users\Swapna\Desktop\Photos\muchkandi2.jpeg">
+        <img src="c:\Users\Swapna\Desktop\Photos\muchkandi3.jpeg">
+        <img src="c:\Users\Swapna\Desktop\Photos\mystry.jpeg">
+        <img src="c:\Users\Swapna\Desktop\Photos\mypeople.jpeg">
+        <img src="c:\Users\Swapna\Desktop\Photos\myfev.jpeg">
+        <img src="c:\Users\Swapna\Desktop\Photos\mystry2.jpeg">
+        <img src="c:\Users\Swapna\Desktop\Photos\mystrymeet.jpeg">
+        <img src="c:\Users\Swapna\Desktop\Photos\sky.jpeg">
+        <img src="c:\Users\Swapna\Desktop\Photos\place.jpeg">
+        <img src="c:\Users\Swapna\Desktop\Photos\three.jpeg">
+        <img src="c:\Users\Swapna\Desktop\Photos\we3.jpeg">
+        <img src="c:\Users\Swapna\Desktop\Photos\three2.jpeg">
+        <img src="c:\Users\Swapna\Desktop\Photos\temple.jpeg">
+        <img src="c:\Users\Swapna\Desktop\Photos\dance.jpeg">
+        <img src="c:\Users\Swapna\Desktop\Photos\water.jpeg">
+        <img src="c:\Users\Swapna\Desktop\Photos\trip.jpeg">
+        <img src="c:\Users\Swapna\Desktop\Photos\room.jpeg">
+        <img src="c:\Users\Swapna\Desktop\Photos\ganpati.jpeg">
+        <img src="c:\Users\Swapna\Desktop\Photos\lunch.jpeg">
+        <img src="c:\Users\Swapna\Desktop\Photos\maam.jpeg">
+        <img src="c:\Users\Swapna\Desktop\Photos\momo.jpeg">
+        <img src="c:\Users\Swapna\Desktop\Photos\dinner.jpeg">
+        <img src="c:\Users\Swapna\Desktop\Photos\lunchbox.jpeg">
+        <img src="c:\Users\Swapna\Desktop\Photos\dominos.jpeg">
+        <img src="c:\Users\Swapna\Desktop\Photos\car.jpeg">
+        <img src="c:\Users\Swapna\Desktop\Photos\auditorum.jpeg">
+        <img src="c:\Users\Swapna\Desktop\Photos\auditorium2.jpeg">
+        <img src="c:\Users\Swapna\Desktop\Photos\dept.jpeg">
+        <img src="c:\Users\Swapna\Desktop\Photos\exam.jpeg">
+        <img src="c:\Users\Swapna\Desktop\Photos\exam2.jpeg">
+        <img src="c:\Users\Swapna\Desktop\Photos\home2.jpeg">
+         <img src="c:\Users\Swapna\Desktop\Photos\haveli.jpeg">
+         <img src="c:\Users\Swapna\Desktop\Photos\sneha.jpeg">
+         <img src="c:\Users\Swapna\Desktop\Photos\sanket.jpeg">
+         <img src="c:\Users\Swapna\Desktop\Photos\sankethome.jpeg">
+         <img src="c:\Users\Swapna\Desktop\Photos\bridge.jpeg">
+         <img src="c:\Users\Swapna\Desktop\Photos\audi3.jpeg">
+         <img src="c:\Users\Swapna\Desktop\Photos\audi4.jpeg">
+         <img src="c:\Users\Swapna\Desktop\Photos\gift.jpeg">
+         <img src="c:\Users\Swapna\Desktop\Photos\rohan.jpeg">
+         <img src="c:\Users\Swapna\Desktop\Photos\rohan2.jpeg">
+         <img src="c:\Users\Swapna\Desktop\Photos\we4.jpeg">
+         <img src="c:\Users\Swapna\Desktop\Photos\shivraj.jpeg">
+         <img src="c:\Users\Swapna\Desktop\Photos\shivrohan.jpeg">
+         <img src="c:\Users\Swapna\Desktop\Photos\selfie.jpeg">
+         <img src="c:\Users\Swapna\Desktop\Photos\selfie3.jpeg">
+         <img src="c:\Users\Swapna\Desktop\Photos\photosession.jpeg">
+         <img src="c:\Users\Swapna\Desktop\Photos\sankshashi.jpeg">
+         <img src="c:\Users\Swapna\Desktop\Photos\selfie2.jpeg">
+         <img src="c:\Users\Swapna\Desktop\Photos\dandia.jpeg">
+         <img src="c:\Users\Swapna\Desktop\Photos\we32.jpeg">
+         <img src="c:\Users\Swapna\Desktop\Photos\rohan3.jpeg">
+         <img src="c:\Users\Swapna\Desktop\Photos\rohan4.jpeg">
+         <img src="c:\Users\Swapna\Desktop\Photos\trip3.jpeg">
+
+    </div>
+
+</section>
+
+<!-- BACKGROUND MUSIC -->
+<audio id="bgMusic" loop>
+    <source src="c:\Users\Swapna\Desktop\Photos\Friendship Song (PenduJatt.Com.Se).mp3" type="audio/mp3">
+</audio>
+
+<!-- JAVASCRIPT FILE -->
+<script src="script.js"></script>
+
+</body>
+</html>
