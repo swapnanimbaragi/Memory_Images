@@ -320,3 +320,127 @@ function nextQuestion(){
         `;
     }
 }
+
+/* ================= PUZZLE ================= */
+
+let puzzlePieces = [];
+let selectedPiece = null;
+
+function showPuzzle(){
+
+    showPage(".puzzle-section","flex");
+
+    createPuzzle();
+}
+
+function createPuzzle(){
+
+    let board = document.getElementById("puzzleBoard");
+
+    board.innerHTML = "";
+
+    puzzlePieces = [];
+
+    for(let i=0;i<9;i++){
+
+        puzzlePieces.push(i);
+    }
+
+    shufflePuzzle();
+}
+
+function shufflePuzzle(){
+
+    let board = document.getElementById("puzzleBoard");
+
+    document.getElementById("puzzleMessage").innerHTML = "";
+
+    puzzlePieces.sort(() => Math.random() - 0.5);
+
+    board.innerHTML = "";
+
+    puzzlePieces.forEach(function(piece,index){
+
+        let div = document.createElement("div");
+
+        div.className = "puzzle-piece";
+
+        let x = (piece % 3) * 50;
+        let y = Math.floor(piece / 3) * 50;
+
+        div.style.backgroundPosition = `${x}% ${y}%`;
+
+        div.dataset.index = index;
+
+        div.onclick = function(){
+
+            selectPiece(index);
+        };
+
+        board.appendChild(div);
+    });
+}
+
+function selectPiece(index){
+
+    if(selectedPiece === null){
+
+        selectedPiece = index;
+        return;
+    }
+
+    [puzzlePieces[selectedPiece], puzzlePieces[index]] =
+    [puzzlePieces[index], puzzlePieces[selectedPiece]];
+
+    selectedPiece = null;
+
+    renderPuzzle();
+
+    checkPuzzle();
+}
+
+function renderPuzzle(){
+
+    let board = document.getElementById("puzzleBoard");
+
+    board.innerHTML = "";
+
+    puzzlePieces.forEach(function(piece,index){
+
+        let div = document.createElement("div");
+
+        div.className = "puzzle-piece";
+
+        let x = (piece % 3) * 50;
+        let y = Math.floor(piece / 3) * 50;
+
+        div.style.backgroundPosition = `${x}% ${y}%`;
+
+        div.onclick = function(){
+
+            selectPiece(index);
+        };
+
+        board.appendChild(div);
+    });
+}
+
+function checkPuzzle(){
+
+    let correct = true;
+
+    for(let i=0;i<9;i++){
+
+        if(puzzlePieces[i] !== i){
+
+            correct = false;
+            break;
+        }
+    }
+
+    if(correct){
+
+        document.getElementById("puzzleMessage").innerHTML =
+        "Puzzle Completed ❤️✨";
+    }
+}
