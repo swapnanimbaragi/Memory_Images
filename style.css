@@ -1139,6 +1139,8 @@ video{
     overflow-y:auto;
     background:linear-gradient(135deg,#2b124c,#522258,#854f6c);
     padding:30px;
+    /* NAVBAR SPACE FIX */
+    padding-top:110px !important;
 }
 
 .gallery-title{
@@ -1200,6 +1202,7 @@ video{
 .reason-memory{
     display:flex;
     background:linear-gradient(135deg,#2b124c,#522258,#854f6c);
+    padding-top:110px !important;
 }
 
 .reason-image{
@@ -1406,6 +1409,7 @@ video{
         height:100vh !important;
         overflow-y:auto !important;
         padding:20px 12px !important;
+        padding-top:140px !important;
     }
 
     .memory-gallery{
@@ -1428,7 +1432,7 @@ video{
 @media (max-width:768px){
 
     .reason-memory{
-        padding-top:20px !important;
+        padding-top:140px !important;
         gap:20px !important;
     }
 
