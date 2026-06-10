@@ -42,6 +42,8 @@
         <li><a href="#" onclick="showScrollMemory()">Gallery</a></li>
 
         <li><a href="#" onclick="showReasonMemory()">Bond</a></li>
+
+        <li><a href="#" onclick="showQuiz()">Quiz</a></li>
     </ul>
 
 </nav>
@@ -547,12 +549,18 @@
         <img src="Photos/myfev.jpeg">
         <img src="Photos/mystry2.jpeg">
         <img src="Photos/mystrymeet.jpeg">
+        <video class="memory-video-box" autoplay muted loop playsinline>
+            <source src="Photos/didaga.mp4" type="video/mp4">
+        </video>
         <img src="Photos/sky.jpeg">
         <img src="Photos/place.jpeg">
         <img src="Photos/three.jpeg">
         <img src="Photos/we3.jpeg">
         <img src="Photos/three2.jpeg">
         <img src="Photos/temple.jpeg">
+        <video class="memory-video-box" autoplay muted loop playsinline>
+            <source src="Photos/review.mp4" type="video/mp4">
+        </video>
         <img src="Photos/dance.jpeg">
         <img src="Photos/water.jpeg">
         <img src="Photos/trip.jpeg">
@@ -561,40 +569,63 @@
         <img src="Photos/lunch.jpeg">
         <img src="Photos/maam.jpeg">
         <img src="Photos/momo.jpeg">
+        <video class="memory-video-box" autoplay muted loop playsinline>
+            <source src="Photos/chai.mp4" type="video/mp4">
+        </video>
         <img src="Photos/dinner.jpeg">
         <img src="Photos/lunchbox.jpeg">
         <img src="Photos/dominos.jpeg">
         <img src="Photos/car.jpeg">
         <img src="Photos/auditorum.jpeg">
+         <video class="memory-video-box" autoplay muted loop playsinline>
+            <source src="Photos/uno.mp4" type="video/mp4">
+        </video>
         <img src="Photos/auditorium2.jpeg">
         <img src="Photos/dept.jpeg">
         <img src="Photos/exam.jpeg">
+         <video class="memory-video-box" autoplay muted loop playsinline>
+            <source src="Photos/rohan5.mp4" type="video/mp4">
+        </video>
         <img src="Photos/exam2.jpeg">
         <img src="Photos/home2.jpeg">
          <img src="Photos/haveli.jpeg">
          <img src="Photos/sneha.jpeg">
          <img src="Photos/sanket.jpeg">
          <img src="Photos/sankethome.jpeg">
+         <video class="memory-video-box" autoplay muted loop playsinline>
+            <source src="Photos/dance1.mp4" type="video/mp4">
+        </video>
          <img src="Photos/bridge.jpeg">
          <img src="Photos/audi3.jpeg">
          <img src="Photos/audi4.jpeg">
          <img src="Photos/gift.jpeg">
          <img src="Photos/rohan.jpeg">
+         <video class="memory-video-box" autoplay muted loop playsinline>
+            <source src="Photos/chitti.mp4" type="video/mp4">
+        </video>
          <img src="Photos/rohan2.jpeg">
          <img src="Photos/we4.jpeg">
          <img src="Photos/shivraj.jpeg">
          <img src="Photos/shivrohan.jpeg">
          <img src="Photos/selfie.jpeg">
+         <video class="memory-video-box" autoplay muted loop playsinline>
+            <source src="Photos/dance2.mp4" type="video/mp4">
+        </video>
          <img src="Photos/selfiee3.jpeg">
          <img src="Photos/photosession.jpeg">
+        <img src="Photos/videocall.jpeg">
+
          <img src="Photos/sankshashi.jpeg">
          <img src="Photos/selfie2.jpeg">
          <img src="Photos/dandia.jpeg">
          <img src="Photos/we32.jpeg">
          <img src="Photos/rohan3.jpeg">
+         <video class="memory-video-box" autoplay muted loop playsinline>
+            <source src="Photos/game.mp4" type="video/mp4">
+        </video>
          <img src="Photos/rohan4.jpeg">
          <img src="Photos/trip3.jpeg">
-        <img src="Photos/temple2.jpeg">
+        <img src="Photos/temple2.jpeg">       
     </div>
     <button onclick="showReasonMemory()">The Reason Behind This Bond ❤️</button>
 </section>
@@ -632,6 +663,29 @@
             we became a beautiful family filled with laughter,
             memories, and endless togetherness. 💫
         </p>
+
+    </div>
+</section>
+
+<!-- ================= QUIZ SECTION ================= -->
+
+<section class="quiz-section" style="display:none;">
+
+    <div class="quiz-box">
+
+        <h4>FUN QUIZ 🎮</h4>
+
+        <h1>HOW WELL DO YOU KNOW OUR CHAOS? 😂</h1>
+
+        <div id="quizQuestion"></div>
+
+        <div id="quizOptions"></div>
+
+        <p id="quizMessage"></p>
+
+        <button id="nextQuizBtn" onclick="nextQuestion()" style="display:none;">
+            Next Question ❤️
+        </button>
 
     </div>
 
