@@ -1,5 +1,6 @@
 function hideAllPages() {
     document.querySelectorAll("section").forEach(function(section) {
+        section.classList.remove("active-page");
         section.style.display = "none";
     });
 }
@@ -10,6 +11,7 @@ function showPage(className, displayType = "flex") {
     let page = document.querySelector(className);
 
     if (page) {
+        page.classList.add("active-page");
         page.style.display = displayType;
 
         page.classList.remove("animate-page");

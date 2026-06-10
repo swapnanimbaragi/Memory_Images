@@ -1077,6 +1077,58 @@ video{
 }
 /* ================= FINAL MOBILE RESPONSIVE FIX FOR ALL PAGES ================= */
 
+/* ================= CHAPTER 11 DESKTOP ================= */
+
+.reason-memory{
+    display:flex;
+    background:linear-gradient(135deg,#2b124c,#522258,#854f6c);
+}
+
+.reason-image{
+    width:58%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.reason-image img{
+    width:100%;
+    height:95%;
+    object-fit:contain;
+    border-radius:25px;
+}
+
+.reason-text{
+    width:42%;
+    height:100vh;
+    padding:55px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background:rgba(0,0,0,0.55);
+    backdrop-filter:blur(14px);
+    color:white;
+    position:relative;
+    z-index:10;
+}
+
+.reason-text h1{
+    color:#ffd166;
+    font-size:46px;
+    line-height:1.3;
+}
+
+.reason-text p{
+    color:white;
+    font-size:19px;
+    line-height:1.8;
+}
+
+
+/* ================= FINAL MOBILE RESPONSIVE FIX ================= */
+
 @media (max-width:768px){
 
     html, body{
@@ -1099,23 +1151,9 @@ video{
     }
 
     .opening-page{
-        display:flex;
         justify-content:center;
         align-items:center;
         text-align:center;
-    }
-
-    .opening-content,
-    .question-box,
-    .next-box,
-    .group-next-box,
-    .outing-next-box,
-    .cook-next-box,
-    .birthday2-next-box{
-        width:100% !important;
-        max-width:360px !important;
-        padding:25px 18px !important;
-        box-sizing:border-box;
     }
 
     .birthday-memory,
@@ -1131,9 +1169,29 @@ video{
     .reason-memory{
         flex-direction:column !important;
         align-items:center !important;
-        justify-content:flex-start !important;
         text-align:center !important;
         gap:18px !important;
+    }
+
+    .opening-content,
+    .question-box,
+    .birthday-text,
+    .farewell-text,
+    .group-text-section,
+    .outing-text-section,
+    .cooking-text,
+    .birthday2-text,
+    .temple-text,
+    .shiva-text,
+    .rainbow-text,
+    .hanuman-text,
+    .reason-text{
+        width:100% !important;
+        max-width:360px !important;
+        height:auto !important;
+        padding:20px !important;
+        text-align:center !important;
+        box-sizing:border-box;
     }
 
     .birthday-memory > img,
@@ -1171,29 +1229,9 @@ video{
         display:block !important;
     }
 
-    .birthday-text,
-    .farewell-text,
-    .group-text-section,
-    .outing-text-section,
-    .cooking-text,
-    .birthday2-text,
-    .temple-text,
-    .shiva-text,
-    .rainbow-text,
-    .hanuman-text,
-    .reason-text{
-        width:100% !important;
-        max-width:360px !important;
-        height:auto !important;
-        padding:20px !important;
-        text-align:center !important;
-        box-sizing:border-box;
-    }
-
     .birthday2-photos{
         width:100% !important;
         height:auto !important;
-        display:flex !important;
         flex-direction:column !important;
         gap:15px !important;
     }
@@ -1252,10 +1290,6 @@ video{
         padding:20px 12px !important;
     }
 
-    .gallery-title{
-        font-size:32px !important;
-    }
-
     .memory-gallery{
         columns:1 !important;
         padding:10px !important;
@@ -1271,115 +1305,112 @@ video{
     }
 }
 
-/* ================= CHAPTER 11 RESPONSIVE ================= */
-
-.reason-memory{
-    display:flex;
-    background:linear-gradient(135deg,#2b124c,#522258,#854f6c);
-}
-
-.reason-image{
-    width:58%;
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:20px;
-}
-
-.reason-image img{
-    width:100%;
-    height:95%;
-    object-fit:contain;
-    border-radius:25px;
-}
-
-.reason-text{
-    width:42%;
-    height:100vh;
-    padding:55px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    background:rgba(0,0,0,0.38);
-    backdrop-filter:blur(14px);
-    color:white;
-}
-
-/* MOBILE */
+/* ===== LAST CHAPTER TEXT FIX ===== */
 
 @media (max-width:768px){
 
     .reason-memory{
-        flex-direction:column !important;
-        align-items:center !important;
-        text-align:center !important;
-        gap:18px !important;
+        padding-top:20px !important;
+        gap:20px !important;
     }
 
     .reason-image{
         width:100% !important;
-        max-width:360px !important;
+        max-width:340px !important;
         height:auto !important;
-        padding:0 !important;
+        margin:0 auto !important;
     }
 
     .reason-image img{
         width:100% !important;
-        height:auto !important;
-        object-fit:contain !important;
+        max-height:320px !important;
+        object-fit:cover !important;
+        border-radius:20px !important;
     }
 
     .reason-text{
         width:100% !important;
-        max-width:360px !important;
+        max-width:340px !important;
         height:auto !important;
         padding:20px !important;
+        margin:0 auto !important;
     }
 
     .reason-text h1{
-        font-size:30px !important;
+        font-size:28px !important;
+        line-height:1.4 !important;
+        color:aqua;
     }
 
     .reason-text p{
         font-size:16px !important;
-        line-height:1.7 !important;
+        line-height:1.8 !important;
     }
 }
+/* ===== FORCE CHAPTER 11 TEXT VISIBLE ===== */
 
-/* ================= FINAL OVERRIDE FIX ================= */
+.reason-memory{
+    position:relative;
+}
+
+.reason-image,
+.reason-text{
+    position:relative !important;
+    z-index:10 !important;
+}
+
+.reason-text{
+    background:rgba(0,0,0,0.55) !important;
+    color:white !important;
+}
+
+.reason-text h1,
+.reason-text h2{
+    color:#ffd166 !important;
+}
+
+.reason-text p{
+    color:white !important;
+}
 
 @media (max-width:768px){
 
-    .birthday-memory,
-    .farewell-memory,
-    .group-memory,
-    .outing-memory,
-    .cooking-memory,
-    .birthday2-memory,
-    .temple-memory,
-    .shiva-memory,
-    .next-collage-memory,
-    .hanuman-memory,
     .reason-memory{
         display:flex !important;
         flex-direction:column !important;
+        align-items:center !important;
     }
 
-    .scroll-memory{
-        display:block !important;
-    }
-
-    .reason-image,
     .reason-text{
+        display:block !important;
         width:100% !important;
-        max-width:360px !important;
+        max-width:340px !important;
         height:auto !important;
+        padding:22px !important;
+        margin:0 auto 40px !important;
+        background:rgba(0,0,0,0.65) !important;
+        border-radius:20px !important;
+    }
+}
+
+/* ===== FIX: HIDE CHAPTER 11 UNTIL BUTTON CLICK ===== */
+
+.reason-memory{
+    display:none;
+}
+
+.reason-memory.active-page{
+    display:flex !important;
+}
+
+@media (max-width:768px){
+
+    .reason-memory{
+        display:none !important;
     }
 
-    button{
-        position:relative !important;
-        z-index:99999 !important;
-        pointer-events:auto !important;
+    .reason-memory.active-page{
+        display:flex !important;
+        flex-direction:column !important;
     }
 }
