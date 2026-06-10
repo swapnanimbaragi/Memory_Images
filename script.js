@@ -22,6 +22,31 @@ function showPage(className, displayType = "flex") {
     }
 }
 
+
+/* HOME / WELCOME PAGE */
+
+function showWelcomePage(){
+
+    hideAllPages();
+
+    let home = document.querySelector(".opening-page");
+
+    if(home){
+
+        home.style.display = "flex";
+
+        home.classList.remove("animate-page");
+
+        void home.offsetWidth;
+
+        home.classList.add("animate-page");
+
+        window.scrollTo(0,0);
+    }
+}
+
+
+
 /* START BUTTON */
 function startMemories() {
     let music = document.getElementById("bgMusic");

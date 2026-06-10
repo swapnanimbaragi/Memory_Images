@@ -20,6 +20,124 @@ section{
 }
 
 
+html{
+    scroll-behavior:smooth;
+}
+
+.memory-gallery{
+    scroll-behavior:smooth;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    width:100%;
+    height:75px;
+
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:99999;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 60px;
+
+    background:rgba(0,0,0,0.25);
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.logo{
+    color:#ffd166;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    gap:35px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#72efdd;
+}
+/* nav bars dropdown */
+.dropdown{
+    position:relative;
+}
+
+.dropdown-menu{
+    display:none;
+    position:absolute;
+    top:35px;
+    left:0;
+    width:230px;
+    background:rgba(0,0,0,0.85);
+    backdrop-filter:blur(14px);
+    border-radius:18px;
+    padding:12px 0;
+    list-style:none;
+}
+
+.dropdown-menu li a{
+    display:block;
+    padding:12px 18px;
+    font-size:15px;
+}
+
+.dropdown:hover .dropdown-menu{
+    display:block;
+}
+
+@media(max-width:768px){
+    .dropdown-menu{
+        position:static;
+        width:100%;
+        margin-top:8px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+    .navbar{
+        height:auto;
+        flex-direction:column;
+        gap:10px;
+
+        padding:15px;
+    }
+
+    .logo{
+        font-size:22px;
+        text-align:center;
+    }
+
+    .nav-links{
+        gap:18px;
+        padding:0;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .nav-links a{
+        font-size:15px;
+    }
+}
+
 /* ================= OPENING PAGE ================= */
 
 .opening-page{
@@ -1400,8 +1518,10 @@ video{
 }
 
 .reason-memory.active-page{
+    
     display:flex !important;
 }
+
 
 @media (max-width:768px){
 
@@ -1413,4 +1533,10 @@ video{
         display:flex !important;
         flex-direction:column !important;
     }
+}
+
+
+
+section{
+    padding-top:100px;
 }
